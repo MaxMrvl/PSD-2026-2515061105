@@ -281,5 +281,3 @@ Apabila input yang dimasukkan sudah berupa angka dan nilainya lebih dari 0, maka
 
 ---
 ## Link YouTube
-
-[https://youtu.be/js2slwNe-U4?si=Yv-lmIk_RHgNMa9x]
