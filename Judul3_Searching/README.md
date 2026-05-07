@@ -342,4 +342,4 @@ Perintah `continue` membuat program kembali meminta input nomor kursi yang benar
 
 ## Link YouTube
 
-[]
+[https://youtu.be/htRJIKRCCxQ?si=o3Io1LXzAZMCOonU]
