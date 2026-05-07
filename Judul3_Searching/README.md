@@ -10,20 +10,14 @@
 
 Program ini dibuat untuk mengecek apakah sebuah nomor kursi bioskop sudah dipesan atau masih tersedia. Data kursi yang sudah dipesan disimpan di dalam sebuah list, kemudian pengguna dapat memasukkan nomor kursi yang ingin dicek.
 
-Nomor kursi yang dicari berbentuk **integer**, sehingga sesuai dengan konsep pada Percobaan III tentang Searching. Jika nomor kursi yang dimasukkan pengguna terdapat di dalam list, maka kursi tersebut dinyatakan sudah dipesan. Namun, jika nomor kursi tidak ditemukan di dalam list, maka kursi tersebut masih tersedia.
+Nomor kursi yang dicari berbentuk integer, sehingga sesuai dengan konsep pada Percobaan III tentang Searching. Jika nomor kursi yang dimasukkan pengguna terdapat di dalam list, maka kursi tersebut dinyatakan sudah dipesan. Namun, jika nomor kursi tidak ditemukan di dalam list, maka kursi tersebut masih tersedia.
 
-Algoritma yang digunakan adalah **Sequential Search Sentinel**. Sequential Search Sentinel bekerja dengan cara menambahkan data yang dicari ke bagian akhir list sebagai penanda sementara atau sentinel. Dengan adanya sentinel, proses pencarian dapat berhenti saat data ditemukan tanpa perlu menambahkan pengecekan batas list di dalam perulangan.
+Algoritma yang digunakan adalah Sequential Search Sentinel. Sequential Search Sentinel bekerja dengan cara menambahkan data yang dicari ke bagian akhir list sebagai penanda sementara atau sentinel. Dengan adanya sentinel, proses pencarian dapat berhenti saat data ditemukan tanpa perlu menambahkan pengecekan batas list di dalam perulangan.
 
 ---
 
 ## Source Code
-
-> Tambahkan screenshot source code di bagian ini setelah file di-upload ke GitHub.  
-> Contoh format:
->
-> ```html
-> <img width="1320" height="2337" alt="Sequential Search Sentinel Kursi Bioskop" src="LINK_GAMBAR_SOURCE_CODE" />
-> ```
+<img width="1421" height="1901" alt="Judul 3 Searching" src="https://github.com/user-attachments/assets/cb4dfbc9-dd3e-4242-9cff-e414f091a9d0" />
 
 ### Penjelasan Kode
 
@@ -106,25 +100,25 @@ List `kursi_terpesan` berisi data nomor kursi bioskop yang sudah dipesan. Data i
 n = len(kursi_terpesan)
 ```
 
-Baris ini digunakan untuk menghitung jumlah data asli yang ada di dalam list `kursi_terpesan`. Nilai tersebut disimpan ke dalam variabel `n`.
+Ini digunakan untuk menghitung jumlah data asli yang ada di dalam list `kursi_terpesan`. Nilai tersebut disimpan ke dalam variabel `n`.
 
 ```python
 print("=== Sistem Pencarian Nomor Kursi Bioskop ===")
 ```
 
-Baris ini digunakan untuk menampilkan judul program agar pengguna mengetahui bahwa program yang dijalankan adalah sistem pencarian nomor kursi bioskop.
+Digunakan untuk menampilkan judul program agar pengguna mengetahui bahwa program yang dijalankan adalah sistem pencarian nomor kursi bioskop.
 
 ```python
 print(f"Data kursi yang sudah dipesan: {kursi_terpesan}")
 ```
 
-Baris ini menampilkan daftar nomor kursi yang sudah dipesan.
+Untuk menampilkan daftar nomor kursi yang sudah dipesan.
 
 ```python
 print("Nomor kursi tersedia dari 1 sampai 40")
 ```
 
-Baris ini memberikan informasi bahwa nomor kursi yang valid berada pada rentang 1 sampai 40.
+Memberikan informasi bahwa nomor kursi yang valid berada pada rentang 1 sampai 40.
 
 ```python
 while True:
@@ -202,20 +196,16 @@ if __name__ == "__main__":
     main()
 ```
 
-Baris ini memastikan bahwa fungsi `main()` dijalankan ketika file Python dieksekusi secara langsung.
+Bagian ini memastikan agar fungsi `main()` dijalankan ketika file Python dieksekusi secara langsung.
 
 ---
 
 ## Output Program
 
-> Tambahkan screenshot output program di bagian ini setelah program dijalankan.  
-> Contoh format:
->
-> ```html
-> <img width="790" height="226" alt="Output Program Kursi Bioskop" src="LINK_GAMBAR_OUTPUT" />
-> ```
-
 ### Penjelasan Output Jika Kursi Sudah Dipesan
+
+<img width="660" height="158" alt="Screenshot 2026-05-07 204800" src="https://github.com/user-attachments/assets/09fde57b-4075-4afd-a612-bd34339d1591" />
+
 
 Pada awal program, sistem menampilkan daftar kursi yang sudah dipesan dan rentang nomor kursi yang tersedia, yaitu dari 1 sampai 40. Setelah itu, pengguna diminta memasukkan nomor kursi yang ingin dicek.
 
@@ -257,6 +247,8 @@ Artinya, kursi nomor 12 tidak tersedia lagi karena sudah masuk ke dalam daftar k
 
 ### Penjelasan Output Jika Kursi Masih Tersedia
 
+<img width="648" height="138" alt="Screenshot 2026-05-07 205036" src="https://github.com/user-attachments/assets/30bbd65f-f887-40ae-87e1-8199f8722408" />
+
 Contoh input lain yang dimasukkan pengguna adalah:
 
 ```text
@@ -286,6 +278,8 @@ Artinya, kursi nomor 15 belum dipesan dan masih bisa dipilih oleh penonton.
 ---
 
 ### Penjelasan Output Jika Input Tidak Valid
+
+<img width="642" height="184" alt="Screenshot 2026-05-07 205143" src="https://github.com/user-attachments/assets/6fbc321f-5df0-4352-8ca9-231832f6d0a9" />
 
 Selain menampilkan hasil pencarian, program juga memiliki validasi input agar program tidak langsung error ketika pengguna memasukkan data yang salah.
 
