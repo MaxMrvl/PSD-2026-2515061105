@@ -10,7 +10,7 @@
 
 Program ini dibuat untuk mengecek apakah sebuah nomor kursi bioskop sudah dipesan atau masih tersedia. Data kursi yang sudah dipesan disimpan di dalam sebuah list, kemudian pengguna dapat memasukkan nomor kursi yang ingin dicek.
 
-Nomor kursi yang dicari berbentuk integer, sehingga sesuai dengan konsep pada Percobaan III tentang Searching. Jika nomor kursi yang dimasukkan pengguna terdapat di dalam list, maka kursi tersebut dinyatakan sudah dipesan. Namun, jika nomor kursi tidak ditemukan di dalam list, maka kursi tersebut masih tersedia.
+Nomor kursi yang dicari disimpan dalam bentuk integer. Jika nomor kursi yang dimasukkan pengguna terdapat di dalam list, maka kursi tersebut dinyatakan sudah dipesan. Namun, jika nomor kursi tidak ditemukan di dalam list, maka kursi tersebut masih tersedia.
 
 Algoritma yang digunakan adalah Sequential Search Sentinel. Sequential Search Sentinel bekerja dengan cara menambahkan data yang dicari ke bagian akhir list sebagai penanda sementara atau sentinel. Dengan adanya sentinel, proses pencarian dapat berhenti saat data ditemukan tanpa perlu menambahkan pengecekan batas list di dalam perulangan.
 
