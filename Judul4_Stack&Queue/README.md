@@ -645,4 +645,4 @@ Program menampilkan pesan tersebut karena berat laundry harus lebih dari 0 kg.
 
 ## Link YouTube
 
-https://youtu.be/htRJIKRCCxQ?si=262X4dYkxmU_qT9u
+https://youtu.be/d7snkZpXRP0
