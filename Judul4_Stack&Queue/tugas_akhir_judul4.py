@@ -48,7 +48,7 @@ class QueueArray:
         print("Isi antrian laundry (depan ke belakang): ", end="")
         i = self.front_idx
         while True:
-            print(self.q[i], end=" | ")
+            print(self.q[i], end=" ; ")
             if i == self.rear_idx:
                 break
             i = (i + 1) % self.MAXN
