@@ -8,29 +8,17 @@
 
 ## Deskripsi Singkat
 
-Program ini dibuat untuk menerapkan struktur data **Queue** pada sistem antrian laundry. Dalam kasus ini, data pelanggan yang datang lebih dulu akan masuk ke antrian lebih dulu dan diproses lebih dulu.
+Program ini dibuat untuk mengimplementasikan konsep Queue pada studi kasus kehidupan sehari-hari, yaitu sistem antrian laundry. Dalam proses laundry, data pelanggan yang masuk lebih dulu sebaiknya diproses lebih dulu agar urutan pelayanan tetap adil dan teratur.
 
-Program menggunakan konsep **First In First Out (FIFO)**. Artinya, data yang pertama masuk ke dalam queue akan menjadi data pertama yang keluar saat diproses.
+Pada program ini, setiap pelanggan memasukkan data berupa nama dan berat laundry dalam satuan kilogram. Data tersebut kemudian dimasukkan ke dalam antrian menggunakan operasi enqueue(). Ketika laundry mulai diproses, data pelanggan yang berada di bagian paling depan akan dikeluarkan menggunakan operasi dequeue().
 
-Contoh data yang digunakan pada output program adalah:
-
-```text
-Nabil - 3.0 kg
-Raffi - 2.5 kg
-Fathir - 4.0 kg
-```
-
-Karena Nabil masuk pertama, maka data Nabil akan berada di bagian depan antrian dan diproses lebih dulu.
+Struktur data yang digunakan adalah Queue, karena sistem antrian laundry sesuai dengan prinsip First In First Out (FIFO). Artinya, data pertama yang masuk ke dalam antrian akan menjadi data pertama yang diproses.
 
 ---
 
 ## Source Code
 
-> Tambahkan screenshot source code di bagian ini setelah file di-upload ke GitHub.
-
-```html
-<img width="1320" height="2337" alt="Queue Antrian Laundry" src="LINK_GAMBAR_SOURCE_CODE" />
-```
+<img width="1258" height="4438" alt="Laundry fix" src="https://github.com/user-attachments/assets/17c41fb5-9516-41d6-9c49-aa6a4e9beb5e" />
 
 ---
 
@@ -563,164 +551,72 @@ Baris ini memastikan fungsi `main()` dijalankan saat file Python dieksekusi lang
 
 ## Output Program
 
-> Tambahkan screenshot output program di bagian ini setelah program dijalankan.
+<img width="496" height="718" alt="Screenshot 2026-05-19 212552" src="https://github.com/user-attachments/assets/fbce6186-f1ac-4d98-8ee2-3b8f479102dd" />
 
-```html
-<img width="790" height="226" alt="Output Queue Antrian Laundry" src="LINK_GAMBAR_OUTPUT" />
-```
+Contoh Output Menambahkan Data Laundry
 
-### Contoh Output Menambahkan Data Nabil
+<img width="483" height="240" alt="Screenshot 2026-05-19 212419" src="https://github.com/user-attachments/assets/af2c35d0-e097-4a4b-bcbd-70f1a99fc0aa" />
 
-```text
-=== SISTEM ANTRIAN LAUNDRY ===
-1. Tambah laundry
-2. Proses laundry
-3. Lihat laundry paling depan
-4. Tampilkan antrian
-5. Keluar
-Pilih: 1
-Nama pelanggan: Nabil
-Berat laundry (kg): 3
-Data laundry Nabil - 3.0 kg berhasil masuk antrian
-```
+Pada contoh output tersebut, pengguna memilih menu 1 untuk menambahkan data laundry. Data yang dimasukkan adalah pelanggan bernama Nabil dengan berat laundry 3 kg.
 
-Penjelasan per baris:
+Saat menu ini dijalankan, program memanggil method `enqueue()`. Method ini berfungsi untuk memasukkan data baru ke bagian belakang antrian. Karena sebelumnya antrian masih kosong, data Nabil menjadi data pertama sekaligus berada di posisi paling depan.
 
-```text
-=== SISTEM ANTRIAN LAUNDRY ===
-```
+Contoh Output Menambahkan Beberapa Data Laundry
 
-Baris ini adalah judul program.
+<img width="480" height="101" alt="Screenshot 2026-05-19 212602" src="https://github.com/user-attachments/assets/727a83d9-20e1-429e-9faf-26fd79def613" />
+<img width="491" height="97" alt="Screenshot 2026-05-19 212610" src="https://github.com/user-attachments/assets/b92c33e0-8c25-4df6-ae81-162b4041849c" />
 
-```text
-1. Tambah laundry
-2. Proses laundry
-3. Lihat laundry paling depan
-4. Tampilkan antrian
-5. Keluar
-```
+Pada contoh di atas, pengguna kembali memilih menu 1 untuk menambahkan data Raffi dan Fathir. Setiap kali menu ini dipilih, program akan memanggil method `enqueue()`.
 
-Bagian ini menampilkan pilihan menu.
+Karena Queue menggunakan prinsip FIFO, data yang masuk lebih dulu akan berada di depan. Urutan antriannya menjadi Nabil, Raffi, lalu Fathir.
 
-```text
-Pilih: 1
-```
+Contoh Output Menampilkan Antrian
 
-Pengguna memilih menu 1 untuk menambahkan data laundry.
+<img width="862" height="197" alt="Screenshot 2026-05-19 212850" src="https://github.com/user-attachments/assets/f7c7ad2c-bdbd-418f-82b0-7b77840b2d2c" />
 
-```text
-Nama pelanggan: Nabil
-```
+Pada output tersebut, pengguna memilih menu 4 untuk menampilkan seluruh isi antrian laundry. Menu ini memanggil method `display()`.
 
-Pengguna memasukkan nama pelanggan, yaitu Nabil.
+Method `display()` menampilkan data dari posisi depan sampai belakang. Karena Nabil masuk pertama, maka Nabil berada di depan. Raffi berada setelah Nabil, dan Fathir berada di posisi paling belakang.
 
-```text
-Berat laundry (kg): 3
-```
+Contoh Output Melihat Laundry Paling Depan
 
-Pengguna memasukkan berat laundry Nabil sebesar 3 kg.
+<img width="392" height="186" alt="Screenshot 2026-05-19 212903" src="https://github.com/user-attachments/assets/68bcae63-510d-4dc0-817c-c14e7c0b0c4c" />
 
-```text
-Data laundry Nabil - 3.0 kg berhasil masuk antrian
-```
+Pada output tersebut, pengguna memilih menu 3 untuk melihat data laundry yang berada di posisi paling depan. Menu ini memanggil method `peek()`.
 
-Program menampilkan bahwa data laundry Nabil berhasil masuk ke antrian.
+Method `peek()` hanya menampilkan data paling depan tanpa menghapus data tersebut dari antrian. Jadi, data Nabil masih tetap berada di dalam antrian setelah menu ini dijalankan.
 
----
+Contoh Output Memproses Laundry
 
-### Contoh Output Menambahkan Data Raffi dan Fathir
+<img width="416" height="186" alt="Screenshot 2026-05-19 212921" src="https://github.com/user-attachments/assets/08f3e858-d82c-4a0c-9a18-0d99864f99ad" />
 
-```text
-Pilih: 1
-Nama pelanggan: Raffi
-Berat laundry (kg): 2.5
-Data laundry Raffi - 2.5 kg berhasil masuk antrian
+Pada output tersebut, pengguna memilih menu 2 untuk memproses data laundry paling depan. Menu ini memanggil method `dequeue()`.
 
-Pilih: 1
-Nama pelanggan: Fathir
-Berat laundry (kg): 4
-Data laundry Fathir - 4.0 kg berhasil masuk antrian
-```
+Method `dequeue()` mengambil data yang berada di bagian paling depan, kemudian menghapus data tersebut dari antrian. Karena Nabil adalah data pertama yang masuk, maka Nabil juga menjadi data pertama yang diproses.
 
-Penjelasan singkatnya, Raffi dan Fathir juga dimasukkan ke antrian menggunakan menu 1. Karena Raffi dimasukkan setelah Nabil, posisi Raffi berada di belakang Nabil. Fathir berada di belakang Raffi karena dimasukkan setelah Raffi.
+Setelah Nabil diproses, jika antrian ditampilkan lagi maka hasilnya menjadi:
 
----
+<img width="695" height="195" alt="Screenshot 2026-05-19 212933" src="https://github.com/user-attachments/assets/460b8920-138e-4ac9-bf4e-99d28889da09" />
 
-### Contoh Output Menampilkan Antrian
+Output tersebut menunjukkan bahwa data Nabil sudah keluar dari antrian. Setelah Nabil diproses, posisi paling depan berpindah ke Raffi.
 
-```text
-Pilih: 4
-Isi antrian laundry (depan ke belakang): Nabil - 3.0 kg ; Raffi - 2.5 kg ; Fathir - 4.0 kg ;
-```
+Contoh Output Jika Antrian Kosong
 
-Penjelasan per baris:
+<img width="307" height="180" alt="Screenshot 2026-05-19 213021" src="https://github.com/user-attachments/assets/beec9e6f-331b-4560-8a10-5ffd654e0059" />
 
-```text
-Pilih: 4
-```
+Output tersebut muncul ketika pengguna memilih menu 2, tetapi belum ada data laundry di dalam antrian. Pada kondisi ini, method dequeue() tetap dipanggil, tetapi program mengecek terlebih dahulu apakah Queue kosong menggunakan method `is_empty()`.
 
-Pengguna memilih menu 4 untuk menampilkan seluruh isi antrian.
+Karena antrian kosong, program menampilkan pesan bahwa antrian laundry kosong.
 
-```text
-Isi antrian laundry (depan ke belakang): Nabil - 3.0 kg ; Raffi - 2.5 kg ; Fathir - 4.0 kg ;
-```
+<img width="298" height="192" alt="Screenshot 2026-05-19 213005" src="https://github.com/user-attachments/assets/beaa7deb-3f93-4198-b22f-592ee2448979" />
 
-Program menampilkan data dari depan ke belakang. Nabil berada paling depan karena data Nabil masuk pertama. Raffi berada setelah Nabil, lalu Fathir berada paling belakang.
+Output tersebut muncul ketika pengguna memilih menu 3, tetapi antrian masih kosong. Method peek() dipanggil, lalu program mengecek kondisi antrian menggunakan `is_empty()`.
 
----
+Karena tidak ada data paling depan yang bisa ditampilkan, program menampilkan pesan bahwa antrian laundry kosong.
 
-### Contoh Output Melihat Data Paling Depan
+<img width="303" height="193" alt="Screenshot 2026-05-19 213039" src="https://github.com/user-attachments/assets/0cf1293d-b1f7-48fc-965b-5b06b76b7e7c" />
 
-```text
-Pilih: 3
-Data laundry paling depan: Nabil - 3.0 kg
-```
-
-Penjelasan per baris:
-
-```text
-Pilih: 3
-```
-
-Pengguna memilih menu 3 untuk melihat data laundry yang berada paling depan.
-
-```text
-Data laundry paling depan: Nabil - 3.0 kg
-```
-
-Program menampilkan data Nabil karena Nabil adalah pelanggan yang pertama masuk ke antrian.
-
----
-
-### Contoh Output Memproses Laundry
-
-```text
-Pilih: 2
-Data laundry Nabil - 3.0 kg sedang diproses
-```
-
-Penjelasan per baris:
-
-```text
-Pilih: 2
-```
-
-Pengguna memilih menu 2 untuk memproses laundry paling depan.
-
-```text
-Data laundry Nabil - 3.0 kg sedang diproses
-```
-
-Program memproses data Nabil karena Nabil berada di posisi paling depan. Setelah diproses, data Nabil keluar dari antrian.
-
-Jika antrian ditampilkan lagi, hasilnya menjadi:
-
-```text
-Pilih: 4
-Isi antrian laundry (depan ke belakang): Raffi - 2.5 kg ; Fathir - 4.0 kg ;
-```
-
-Raffi sekarang menjadi data paling depan karena Nabil sudah diproses.
+Output tersebut muncul ketika pengguna memilih menu 4, tetapi belum ada data yang tersimpan dalam antrian. Method `display()` dipanggil, tetapi karena Queue kosong, program hanya menampilkan pesan bahwa antrian laundry kosong.
 
 ---
 
@@ -728,30 +624,20 @@ Raffi sekarang menjadi data paling depan karena Nabil sudah diproses.
 
 #### 1. Input menu bukan angka
 
-```text
-Pilih: dua
-Input tidak valid
-```
+<img width="287" height="177" alt="Screenshot 2026-05-19 213051" src="https://github.com/user-attachments/assets/4a3e8752-a862-4311-aa6d-364301118173" />
 
 Program menampilkan pesan tersebut karena menu harus dimasukkan dalam bentuk angka.
 
 #### 2. Berat laundry bukan angka
 
-```text
-Nama pelanggan: Nabil
-Berat laundry (kg): tiga
-Input berat tidak valid
-```
+<img width="307" height="251" alt="Screenshot 2026-05-19 213118" src="https://github.com/user-attachments/assets/54ec5974-9d52-4dc6-9e7d-bdfb4b0376a5" />
+
 
 Program menampilkan pesan tersebut karena berat laundry harus berupa angka.
 
 #### 3. Berat laundry nol atau negatif
 
-```text
-Nama pelanggan: Raffi
-Berat laundry (kg): 0
-Berat laundry harus lebih dari 0 kg
-```
+<img width="363" height="252" alt="Screenshot 2026-05-19 213147" src="https://github.com/user-attachments/assets/b61bdfff-0c29-420e-91cf-4f779d41155d" />
 
 Program menampilkan pesan tersebut karena berat laundry harus lebih dari 0 kg.
 
@@ -759,4 +645,4 @@ Program menampilkan pesan tersebut karena berat laundry harus lebih dari 0 kg.
 
 ## Link YouTube
 
-[Masukkan link YouTube di sini setelah video di-upload]
+
