@@ -8,43 +8,15 @@
 
 ## Deskripsi Singkat
 
-Program ini dibuat untuk menerapkan konsep **Queue** pada contoh yang sering dijumpai dalam kehidupan sehari-hari, yaitu antrian laundry.
+Program ini dibuat untuk menerapkan struktur data **Queue** pada contoh yang dekat dengan kegiatan sehari-hari, yaitu antrian laundry. Pada tempat laundry, pakaian pelanggan biasanya diproses berdasarkan urutan kedatangan. Pelanggan yang datang lebih dulu akan diproses lebih dulu.
 
-Pada tempat laundry, pakaian pelanggan biasanya diproses berdasarkan urutan masuk.
-
-Pelanggan yang memasukkan laundry lebih dulu akan diproses lebih dulu.
-
-Karena itu, struktur data yang digunakan adalah **Queue**.
-
-Queue menggunakan prinsip **First In First Out (FIFO)**.
-
-Artinya, data yang pertama masuk akan menjadi data pertama yang keluar.
-
-Contoh sederhana:
-
-```text
-Andi - 3 kg
-Budi - 2 kg
-Sinta - 4 kg
-```
-
-Jika data masuk dengan urutan seperti itu, maka data yang diproses lebih dulu adalah:
-
-```text
-Andi - 3 kg
-```
+Karena itu, struktur data **Queue** cocok dipakai pada program ini. Queue menggunakan prinsip **First In First Out (FIFO)**, yaitu data yang pertama masuk akan menjadi data pertama yang keluar atau diproses.
 
 ---
 
 ## Source Code
 
-> Tambahkan screenshot source code di bagian ini setelah file di-upload ke GitHub.
-
-```html
-<img width="1320" height="2337" alt="Queue Antrian Laundry" src="LINK_GAMBAR_SOURCE_CODE" />
-```
-
----
+<img width="1242" height="4457" alt="Laundry" src="https://github.com/user-attachments/assets/d398e9bd-a2f1-468c-b935-19bb413303e1" />
 
 ## Penjelasan Kode
 
