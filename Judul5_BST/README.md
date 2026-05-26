@@ -2,17 +2,15 @@
 
 ## Judul Program
 
-**Sistem Penyimpanan Level Monster Game Menggunakan Binary Search Tree**
+**Sistem Pencarian Level Monster Game Menggunakan Binary Search Tree**
 
 ---
 
 ## Deskripsi Singkat
 
-Program ini dibuat untuk mengimplementasikan konsep **Binary Search Tree (BST)** pada contoh game, yaitu sistem penyimpanan level monster. Dalam game, monster biasanya memiliki level berbeda-beda. Level yang lebih kecil dapat dianggap sebagai monster yang lebih mudah, sedangkan level yang lebih besar dapat dianggap sebagai monster yang lebih sulit.
+Program ini dibuat untuk mengimplementasikan konsep **Binary Search Tree (BST)** pada contoh game, yaitu sistem pencarian level monster. Dalam game, monster biasanya memiliki level berbeda-beda. Level yang lebih kecil dapat dianggap sebagai monster yang mudah, sedangkan level yang lebih besar dapat dianggap sebagai monster yang sulit dilawan.
 
 Data yang digunakan pada program ini berupa **integer**, yaitu level monster. Data level monster disimpan ke dalam BST agar bisa ditambahkan, dicari, ditampilkan secara terurut, dan dicari nilai paling rendah maupun paling tinggi.
-
-Aturan penyimpanan pada BST adalah nilai yang lebih kecil dari node utama akan masuk ke bagian kiri, sedangkan nilai yang lebih besar akan masuk ke bagian kanan.
 
 ---
 
