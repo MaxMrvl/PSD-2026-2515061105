@@ -18,11 +18,7 @@ Aturan penyimpanan pada BST adalah nilai yang lebih kecil dari node utama akan m
 
 ## Source Code
 
-> Tambahkan screenshot source code di bagian ini setelah file di-upload ke GitHub.
-
-```html
-<img width="1320" height="2337" alt="BST Level Monster Game" src="LINK_GAMBAR_SOURCE_CODE" />
-```
+<img width="1510" height="6634" alt="BSTMONSTER" src="https://github.com/user-attachments/assets/00c9eda1-2e5e-4053-90f8-0e10fb7419b9" />
 
 ---
 
