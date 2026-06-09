@@ -8,9 +8,7 @@
 
 ## Deskripsi Singkat
 
-Program ini dibuat untuk mengimplementasikan konsep Hash Map pada studi kasus sederhana, yaitu sistem data anime favorit. Data anime disimpan menggunakan pasangan key dan value. Pada program ini, key berupa kode anime dalam bentuk integer, sedangkan value berupa judul anime.
-
-Metode yang digunakan adalah Open Addressing dengan teknik Linear Probing. Jika terjadi tabrakan indeks atau collision, program akan mencari slot kosong berikutnya di dalam hash table. Program ini mengikuti pondasi kode Percobaan VI-1 `HashMapOpenAddressing.py`, yang memakai `SlotState`, `Entry`, `HashMapOpenAddressing`, `insert()`, `search()`, `remove_key()`, dan `display()`.
+Program ini dibuat untuk mengimplementasikan konsep Hash Map pada studi kasus sederhana, yaitu sistem data anime favorit. Data anime disimpan menggunakan pasangan key dan value. Pada program ini, key berupa kode anime dalam bentuk integer, sedangkan value berupa judul anime. Metode yang digunakan adalah Open Addressing dengan teknik Linear Probing. Jika terjadi tabrakan indeks atau collision, program akan mencari slot kosong berikutnya di dalam hash table.
 
 Contoh data:
 
