@@ -13,6 +13,7 @@ Program ini dibuat untuk mengimplementasikan konsep Hash Map pada studi kasus se
 ---
 
 ## Source Code
+<img width="1465" height="5695" alt="Hashmap" src="https://github.com/user-attachments/assets/9e856173-bb43-4405-b1f1-bd4e27a43e67" />
 
 ---
 
@@ -20,12 +21,8 @@ Program ini dibuat untuk mengimplementasikan konsep Hash Map pada studi kasus se
 
 ### 1. Class `SlotState`
 
-```python
-class SlotState:
-    EMPTY = 0
-    OCCUPIED = 1
-    DELETED = 2
-```
+<img width="249" height="143" alt="Screenshot 2026-06-09 220958" src="https://github.com/user-attachments/assets/9109cd79-4da7-40d7-b6c9-cb297d31cdc0" />
+
 
 Class ini digunakan untuk memberi status pada setiap slot di hash table.
 
@@ -361,13 +358,8 @@ Baris ini membuat objek `hashmap` dari class `HashMapOpenAddressing`.
 
 Menu yang tersedia:
 
-```text
-1. Tambah data anime
-2. Cari data anime
-3. Hapus data anime
-4. Tampilkan hash table
-5. Keluar
-```
+<img width="323" height="133" alt="Screenshot 2026-06-09 220911" src="https://github.com/user-attachments/assets/5f566b60-7d04-4a65-9d08-4e2ab604bf5f" />
+
 
 Menu `1` memanggil method `insert()` untuk menambahkan data anime.
 
@@ -385,18 +377,8 @@ Menu `5` digunakan untuk keluar dari program.
 
 ### Contoh Output Menambahkan Data Anime
 
-```text
-=== SISTEM DATA ANIME FAVORIT ===
-1. Tambah data anime
-2. Cari data anime
-3. Hapus data anime
-4. Tampilkan hash table
-5. Keluar
-Pilih: 1
-Masukkan kode anime: 101
-Masukkan judul anime: Naruto
-Anime Naruto dengan kode 101 berhasil ditambahkan
-```
+<img width="500" height="234" alt="Screenshot 2026-06-09 220315" src="https://github.com/user-attachments/assets/8369dc2a-82a5-4b82-a81a-c892872b29c5" />
+
 
 Pada output tersebut, pengguna memilih menu `1`, sehingga program memanggil method `insert()`. Kode `101` diproses oleh `hash_function()` dan diarahkan ke indeks `1`.
 
@@ -404,17 +386,7 @@ Pada output tersebut, pengguna memilih menu `1`, sehingga program memanggil meth
 
 ### Contoh Output Menambahkan Data yang Mengalami Collision
 
-```text
-Pilih: 1
-Masukkan kode anime: 111
-Masukkan judul anime: One Piece
-Anime One Piece dengan kode 111 berhasil ditambahkan
-
-Pilih: 1
-Masukkan kode anime: 121
-Masukkan judul anime: Bleach
-Anime Bleach dengan kode 121 berhasil ditambahkan
-```
+<img width="500" height="486" alt="Screenshot 2026-06-09 220315p" src="https://github.com/user-attachments/assets/c19e2ff9-2133-4395-a78d-3ad7895213fa" />
 
 Pada contoh tersebut, kode `111` dan `121` juga menghasilkan indeks awal `1` karena `111 % 10 = 1` dan `121 % 10 = 1`.
 
@@ -424,21 +396,8 @@ Karena indeks `1` sudah ditempati oleh Naruto, maka program menggunakan linear p
 
 ### Contoh Output Menampilkan Hash Table
 
-```text
-Pilih: 4
+<img width="355" height="435" alt="Screenshot 2026-06-09 220325" src="https://github.com/user-attachments/assets/521357be-308b-4a3d-a50f-c9d95f8f2d7c" />
 
-Isi Hash Table Anime:
-0: EMPTY
-1: (101, Naruto)
-2: (111, One Piece)
-3: (121, Bleach)
-4: EMPTY
-5: EMPTY
-6: EMPTY
-7: EMPTY
-8: EMPTY
-9: EMPTY
-```
 
 Output tersebut muncul ketika pengguna memilih menu `4`. Menu ini memanggil method `display()` untuk menampilkan isi hash table. Data Naruto berada pada indeks `1`, sedangkan One Piece dan Bleach berada di indeks setelahnya karena terjadi collision.
 
@@ -446,11 +405,8 @@ Output tersebut muncul ketika pengguna memilih menu `4`. Menu ini memanggil meth
 
 ### Contoh Output Mencari Data Anime
 
-```text
-Pilih: 2
-Masukkan kode anime: 111
-Kode 111 ditemukan, judul anime: One Piece
-```
+<img width="409" height="222" alt="Screenshot 2026-06-09 220333" src="https://github.com/user-attachments/assets/5032b1df-2aa5-4367-aae7-98b416b59c25" />
+
 
 Pada output tersebut, pengguna memilih menu `2`, sehingga program memanggil method `search()`. Program mencari kode `111` mulai dari indeks hasil hash sampai data ditemukan.
 
@@ -458,34 +414,19 @@ Pada output tersebut, pengguna memilih menu `2`, sehingga program memanggil meth
 
 ### Contoh Output Menghapus Data Anime
 
-```text
-Pilih: 3
-Masukkan kode anime: 111
-Anime dengan kode 111 berhasil dihapus
-```
+<img width="376" height="213" alt="Screenshot 2026-06-09 220340" src="https://github.com/user-attachments/assets/4bb45989-9c2f-4ba9-a43f-9fd62601e3ae" />
+
 
 Pada output tersebut, pengguna memilih menu `3`, sehingga program memanggil method `remove_key()`. Data dengan kode `111` tidak langsung diubah menjadi `EMPTY`, tetapi statusnya diubah menjadi `DELETED`.
 
 Jika hash table ditampilkan lagi, hasilnya menjadi:
 
-```text
-Pilih: 4
+<img width="327" height="430" alt="Screenshot 2026-06-09 220345" src="https://github.com/user-attachments/assets/007a83bf-4569-416e-9364-b4e3cd74e2c8" />
 
-Isi Hash Table Anime:
-0: EMPTY
-1: (101, Naruto)
-2: DELETED
-3: (121, Bleach)
-4: EMPTY
-5: EMPTY
-6: EMPTY
-7: EMPTY
-8: EMPTY
-9: EMPTY
-```
 
 Slot indeks `2` berubah menjadi `DELETED` karena data One Piece sudah dihapus.
 
 ---
 
 ## Link YouTube
+https://youtu.be/Z5gD_TSMPf0?si=0iuFON3s_HQzvBwY
